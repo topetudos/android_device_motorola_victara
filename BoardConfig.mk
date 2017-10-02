@@ -130,8 +130,8 @@ EXTENDED_FONT_FOOTPRINT := true
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
 
-# Hardware
-BOARD_HARDWARE_CLASS := device/motorola/victara/lineagehw
+# Lineage Hardware
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(VENDOR_PATH)/lineagehw|**/*.java
 
 # HIDL
 DEVICE_MANIFEST_FILE := device/motorola/victara/configs/manifest.xml
