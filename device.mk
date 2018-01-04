@@ -332,3 +332,8 @@ PRODUCT_PACKAGES += \
 # Keymaster HIDL interfaces
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
+
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0 \
+    android.hidl.base@1.0
