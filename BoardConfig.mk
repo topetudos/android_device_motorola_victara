@@ -24,6 +24,9 @@ BOARD_VENDOR := motorola-qcom
 # Assert
 TARGET_OTA_ASSERT_DEVICE := victara
 
+# Exclude serif fonts for saving system.img size.
+EXCLUDE_SERIF_FONTS := true
+
 # Filesystem
 TARGET_ALLOW_LEGACY_AIDS := true
 TARGET_FS_CONFIG_GEN := \
