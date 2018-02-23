@@ -149,14 +149,12 @@ BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_11
 BOARD_GLOBAL_CPPFLAGS += -DUSE_RIL_VERSION_11
 #TARGET_RIL_VARIANT := caf
 
+# Snapdragon LLVM
+TARGET_USE_SDCLANG := true
 ifneq ($(HOST_OS),darwin)
-
 SDCLANG := true
-
 SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-4.0/bin
-
 SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
-
 endif
 
 # SELinux
