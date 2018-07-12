@@ -41,3 +41,7 @@
 /system/bin/stm401                      u:object_r:stm401_exec:s0
 
 /(vendor|system/vendor)/etc/init.mmi(.*)?sh    u:object_r:mmi_exec:s0
+
+# Time
+/data/system/time(/.*)?                                     u:object_r:time_data_file:s0
+
