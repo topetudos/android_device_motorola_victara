@@ -44,6 +44,8 @@ on fs
     wait /dev/block/platform/${ro.boot.bootdevice}
     symlink /dev/block/platform/${ro.boot.bootdevice} /dev/block/bootdevice
 
+    start program_bdaddr
+
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -391,7 +393,7 @@ on property:bluetooth.hciattach=false
 #service bridgemgrd /system/bin/bridgemgrd
 #    class late_start
 #    user radio
-#    group radio qcom_diag
+#    group radio startqcom_diag
 #    disabled
 
 #service port-bridge /system/bin/port-bridge /dev/smd0 /dev/ttyGS0
@@ -657,6 +659,13 @@ service hostapd /vendor/bin/hostapd -dddd /data/misc/wifi/hostapd.conf
 
 #on property:persist.data.ds_fmc_app.mode=1
 #    start ds_fmc_appd
+
+service program_bdaddr /vendor/bin/init.program_bdaddr.sh
+    user bluetooth
+    group bluetooth
+    seclabel u:r:bluetooth_loader:s0
+    disabled
+    oneshot
 
 #service ims_regmanager /system/bin/exe-ims-regmanagerprocessnative
 #    class late_start
