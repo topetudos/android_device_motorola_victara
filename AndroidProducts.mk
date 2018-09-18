@@ -15,3 +15,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_victara.mk
+    $(LOCAL_DIR)/lineage_victara.mk
