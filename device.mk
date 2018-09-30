@@ -95,16 +95,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
 
 # Audio
-PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    audio_policy.msm8974 \
-    audio.primary.msm8974 \
-    audio.r_submix.default \
-    audio.usb.default \
-    libaudio-resampler \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing
+#PRODUCT_PACKAGES += \
+#    audio.a2dp.default \
+#    audio_policy.msm8974 \
+#    audio.primary.msm8974 \
+#    audio.r_submix.default \
+#    audio.usb.default \
+#    libaudio-resampler \
+#    libqcompostprocbundle \
+#    libqcomvisualizer \
+#    libqcomvoiceprocessing
 
 PRODUCT_PACKAGES += \
     mbhc.bin \
@@ -130,11 +130,11 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl
 
 # Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl-legacy \
-    camera.msm8974 \
-    libshims_sensorlistener \
-    Snap
+#PRODUCT_PACKAGES += \
+#    android.hardware.camera.provider@2.4-impl-legacy \
+#    camera.msm8974 \
+#    libshims_sensorlistener \
+#    Snap
 
 # CRDA
 PRODUCT_PACKAGES += \
@@ -237,8 +237,7 @@ PRODUCT_PACKAGES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
-    power.msm8974
+    android.hardware.power@1.0-service-qti
 
 # Ramdisk
 PRODUCT_PACKAGES += \
