@@ -15,7 +15,7 @@ use.voice.path.for.pcm.voip=true
 ro.audio.fm_max_volume=5793
 
 # Bluetooth
-qcom.bluetooth.soc=smd
+vendor.qcom.bluetooth.soc=proto
 
 # Camera
 camera2.portability.force_api=1
