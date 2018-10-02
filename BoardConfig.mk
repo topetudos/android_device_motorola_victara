@@ -21,6 +21,8 @@ LOCAL_PATH := device/motorola/victara
 
 BOARD_VENDOR := motorola-qcom
 
+ALLOW_MISSING_DEPENDENCIES=true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := victara
 
