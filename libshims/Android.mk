@@ -34,7 +34,9 @@ LOCAL_SRC_FILES := \
     sensorlistener/SensorManager.cpp \
     sensorlistener/moto_camera_misc.c \
     sensorlistener/sensors.cpp \
-    sensorlistener/MediaCodec.cpp
+    sensorlistener/MediaCodec.cpp \
+    sensorlistener/AudioSource.cpp \
+    sensorlistener/MetaData.cpp
 
 LOCAL_MODULE := libshims_sensorlistener
 LOCAL_MODULE_TAGS := optional
