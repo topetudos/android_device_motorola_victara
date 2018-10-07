@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    camera.device@1.0-impl 
+    camera.device@1.0-impl \
     camera.msm8974 \
     libshims_sensorlistener \
     Snap
@@ -221,8 +221,8 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 PRODUCT_COPY_FILES += \
-    device/motorola/victara/nfc/libnfc-brcm.conf:system/vendor/etc/ibnfc-nci.conf \
-    device/motorola/victara/nfc/libnfc-brcm-20795a10.conf:system/vendor/etc/libnfc-nci-20795a10.conf
+    device/motorola/victara/nfc/libnfc-nci.conf:system/vendor/etc/libnfc-nci.conf \
+    device/motorola/victara/nfc/libnfc-nci-20795a10.conf:system/vendor/etc/libnfc-nci-20795a10.conf
 
 # OMX
 PRODUCT_PACKAGES += \
