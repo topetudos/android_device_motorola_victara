@@ -95,7 +95,7 @@ service mpdecision /vendor/bin/mpdecision --avg_comp
    group system
    disabled
 
-service thermal-engine /vendor/bin/thermal-engine
+service thermal-engine /vendor/bin/thermal-engine -c /etc/thermal-engine-victara.conf
    class main
    user root
    group root
