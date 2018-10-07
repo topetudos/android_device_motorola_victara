@@ -347,13 +347,13 @@ service rmt_storage /vendor/bin/rmt_storage
 #    group bluetooth
 #    disabled
 
-service config_bluetooth /vendor/bin/init.qcom.bt.sh "onboot"
+service config_bluetooth /system/vendor/bin/init.qcom.bt.sh "onboot"
     class core
     user bluetooth
     group bluetooth system
     oneshot
 
-service hciattach /vendor/bin/init.qcom.bt.sh
+service hciattach /system/vendor/bin/init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth net_bt_admin

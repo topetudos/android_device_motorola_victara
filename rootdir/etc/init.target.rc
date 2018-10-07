@@ -67,6 +67,9 @@ on post-fs-data
     mkdir /tombstones/wcnss 0771 system system
     mkdir /tombstones/dsps 0771 system system
 
+# Bluetooth
+    chown bluetooth bluetooth /persist/.bt_nv.bin
+
 on boot
     insmod /system/lib/modules/adsprpc.ko
     insmod /system/lib/modules/touchx.ko
