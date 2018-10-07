@@ -1,7 +1,6 @@
 #include <media/MediaCodecBuffer.h>
 #include <media/stagefright/foundation/AHandler.h>
 #include <utils/Vector.h>
-#include <errno.h>
 
 namespace android {
 
