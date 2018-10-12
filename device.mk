@@ -301,17 +301,17 @@ PRODUCT_PACKAGES += \
 
 # WiFi HAL
 PRODUCT_PACKAGES += \
- #   android.hardware.wifi@1.0-service
+    android.hardware.wifi@1.0-service
 
 # Wifi
 PRODUCT_PACKAGES += \
-#    hostapd \
- #   hostapd.accept \
-#    hostapd.deny \
-#    libwpa_client \
-#    wcnss_service \
- #   wpa_supplicant \
-#    wificond
+    hostapd \
+    hostapd.accept \
+    hostapd.deny \
+    libwpa_client \
+    wcnss_service \
+    wpa_supplicant \
+    wificond
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/vendor/etc/wifi/wpa_supplicant.conf \
