@@ -34,6 +34,7 @@ on enable-low-power
     write /sys/devices/system/cpu/cpufreq/interactive/max_freq_hysteresis 100000
     write /sys/devices/system/cpu/cpufreq/interactive/timer_slack 30000
     setprop recovery.perf.mode 0
+    setprop sys.usb.ffs.aio_compat 1
 
 on property:init.svc.recovery=running
     trigger enable-low-power
